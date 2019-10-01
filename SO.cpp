@@ -133,30 +133,6 @@ int main(int argc,char *argv[])
 		}
 		
 		
-		
-//		for(int o = 0;o < operation_merge.size();o++){
-//			Polygon::iterator_type it_start = gtl::begin_points(operation_merge[o]);
-//			Polygon::iterator_type it_end = gtl::end_points(operation_merge[o]);
-//			
-//			do{
-//			//cout <<o << ' '<< gtl::x(*it_start)<<' '<<gtl::y(*it_start) << endl;
-//			//cout <<'w'<< *it_start_h<<' '<<gtl::y(*it_start_h) << endl;
-//			if(it_start!=it_end)
-//				it_start ++;
-//			}while(it_start!=it_end);	
-//		}
-		
-		//Polygon::iterator_holes_type it_start_h = gtl::begin_holes(main_set[0]);
-		//Polygon::iterator_holes_type it_end_h = gtl::end_holes(main_set[0]);
-		//		
-		//		cout << "He is not handsome." << main_set[0].size_holes() << endl;
-		//		
-		//		const PolygonNoHoles& start_h = *it_start_h;
-		//		//const PolygonNoHoles& end_h = *it_end_h;
-		//		cout << "He is so handsome." << endl;
-
-		//PolygonNoHoles::iterator_type it_start_h_QQ = gtl::begin_points(start_h);
-		//PolygonNoHoles::iterator_type it_end_h_QQ = gtl::end_points(start_h);
 
 	}
 	
@@ -175,13 +151,6 @@ int main(int argc,char *argv[])
 			main_set -= queue_clip[operation_num-1];
 		}
 	}
-	
-//	for (int n_poly = 0;n_poly < main_set.size(); n_poly ++){
-//			Polygon res = main_set[n_poly];
-//			Polygon::iterator_type it_start = gtl::begin_points(res);
-//			Polygon::iterator_type it_end = gtl::end_points(res);
-//			test_ce<gtl::connectivity_extraction_90<long long> >();
-//	}
 	cout << main_set.size()<<"distinct polygons" << endl;
 	int mode = 3;
 	gtl::orientation_2d orient_surrey_carry = gtl::orientation_2d();
