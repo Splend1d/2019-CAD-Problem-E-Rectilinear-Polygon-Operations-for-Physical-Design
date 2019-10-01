@@ -236,22 +236,6 @@ int main(int argc,char *argv[])
 			
 				continue;
 			}
-//			if(main_set[n].size() < 1){
-//				rects_compete_1.clear();
-//				rects_compete_2.clear();
-//				gtl::get_rectangles(rects_compete_1, main_set[n], orient_surrey_carry);
-//				int n_rects_H = rects_compete_1.size();
-//				orient_surrey_carry.turn_90();
-//				gtl::get_rectangles(rects_compete_2, main_set[n], orient_surrey_carry);
-//				orient_surrey_carry.turn_90();
-//				int n_rects_V = rects_compete_2.size();
-//				if(n_rects_V < n_rects_H){
-//					rects.insert(rects.end(), rects_compete_2.begin(), rects_compete_2.end());
-//				}else{
-//					rects.insert(rects.end(), rects_compete_1.begin(), rects_compete_1.end());
-//				}
-//				continue;
-//			}
 			
 			node_from_x.clear();
 			rects_resplit.clear();
